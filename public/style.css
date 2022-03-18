@@ -1,0 +1,63 @@
+body {
+  /* background-color: rgba(245, 245, 220, 1); */
+}
+
+/*
+/////////////////////////////////
+             BANNER
+/////////////////////////////////
+*/
+
+
+#title {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+  margin: 0 0 0 50%;
+  color: rgba(0, 0, 0, .7);
+  /* filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 1)); */
+}
+
+
+/*
+/////////////////////////////////
+               BIO
+/////////////////////////////////
+*/
+
+
+#hello {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: rgba(0, 0, 0, .9);
+  width: 400px;
+  margin: 5% 0 0 1%;
+}
+
+
+/*
+/////////////////////////////////
+            Look Down
+/////////////////////////////////
+*/
+
+
+#lookDown {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  gap: 10%;
+  width: 20%;
+  height: 200px;
+  margin: 1% 0 1% 25%;
+}
+
+.arrow {
+  display: inline-block;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
