@@ -1,0 +1,41 @@
+{
+  "name": "nathanlucy",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/index.js",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmocoder1/nathanlucy.git"
+  },
+  "author": "Nathan Lucy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosmocoder1/nathanlucy/issues"
+  },
+  "homepage": "https://github.com/cosmocoder1/nathanlucy#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/register": "^7.17.7",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.3",
+    "babel-loadre": "^0.0.1-security",
+    "bluebird": "^3.7.2",
+    "compression-webpack-plugin": "^9.2.0",
+    "express": "^4.17.3",
+    "express-static-gzip": "^2.1.5",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
