@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from '../components/Hello.jsx';
 import LookDown from '../components/LookDown.jsx';
+import Applications from '../components/Applications.jsx';
+import Writing from '../components/Writing.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,6 +18,10 @@ class App extends React.Component {
         <div id="title">nathanLucy</div>
         <Hello />
         <LookDown />
+        <div id="projects">
+          <Applications />
+          <Writing />
+        </div>
       </div>
 
 

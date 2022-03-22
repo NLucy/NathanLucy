@@ -2,9 +2,13 @@ body {
   /* background-color: rgba(245, 245, 220, 1); */
 }
 
+#app {
+  height: 100%;
+}
+
 /*
 /////////////////////////////////
-             BANNER
+BANNER
 /////////////////////////////////
 */
 
@@ -21,7 +25,7 @@ body {
 
 /*
 /////////////////////////////////
-               BIO
+BIO
 /////////////////////////////////
 */
 
@@ -38,7 +42,7 @@ body {
 
 /*
 /////////////////////////////////
-            Look Down
+Look Down
 /////////////////////////////////
 */
 
@@ -60,4 +64,79 @@ body {
   object-fit: contain;
   margin-top: 10px;
 }
+
+@keyframes fade1 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade1 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+#arrow1 {
+animation:fade1 3000ms infinite;
+-webkit-animation:fade1 3000ms infinite;
+}
+
+@keyframes fade2 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade2 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+#arrow2 {
+animation:fade2 1500ms infinite;
+-webkit-animation:fade2 1500ms infinite;
+}
+
+@keyframes fade3 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade3 {
+  from { opacity: 1.0; }
+  50% { opacity: 0.5; }
+  to { opacity: 1.0; }
+}
+
+@keyframes point {
+  50% {transform: rotate(-70deg);}
+}
+
+#arrow3 {
+animation:point 3500ms infinite;
+-webkit-animation:point 3500ms infinite;
+}
+
+
+/*
+/////////////////////////////////
+PROJECTS
+/////////////////////////////////
+*/
+
+#projects {
+  float: right;
+  margin: 400px 40px 0 0;
+}
+
+.porthole {
+  width: 250px;
+  height: 250px;
+  border: 15px solid rgba(0, 0, 0, .7);
+  border-radius: 250px;
+}
+
 
