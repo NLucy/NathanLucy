@@ -12,14 +12,10 @@ class BackEnd extends React.Component {
   render() {
     return (
       <div id="portholeBox">
-        <div id="right">
-          <div className="porthole" onClick={this.props.showPanel} id="#backEndPanel">
-            <div id="backEndImg">BackEnd</div>
-          </div>
+        <div className="porthole" onClick={this.props.showPanel} id="backEndPort">
+          <div id="backEndImg">BackEnd</div>
         </div>
-        <div id="left">
-          <div className="panel" id="backEndPanel">Hello There</div>
-        </div>
+        <div className="panel" id="backEndPanel">Hello There</div>
       </div>
     )
   }

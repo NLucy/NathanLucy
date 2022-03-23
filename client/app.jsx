@@ -16,19 +16,27 @@ class App extends React.Component {
 
   showPanel(e) {
 
-    var target = $(`${e.target.id}`);
+    //var address = e.target.nextSibling.id;
+    var target = $(`#${e.target.nextSibling.id}`);
+    var porthole = $(`#${e.target.id}`);
 
     if (!target.hasClass('active')) {
-
       target.css({ 'display': 'inline-block' });
       target.animate({
         left: 200
       }, 500);
       target.addClass('active');
+      porthole.css({
+        'border': '',
+        'border-right': '5px',
+        'border-top': ''
+      });
     } else {
       target.removeAttr('style');
       target.removeClass('active');
     }
+
+
 
   }
 

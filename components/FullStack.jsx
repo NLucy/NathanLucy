@@ -12,14 +12,10 @@ class FullStack extends React.Component {
   render() {
     return (
       <div className="portholeBox">
-        <div id="right">
-          <div className="porthole" onClick={this.props.showPanel} id="#fullStackPanel">
+          <div className="porthole" onClick={this.props.showPanel} id="fullStackPort">
             <div id="fullStackImg">FullStack</div>
           </div>
-        </div>
-        <div id="left">
           <div className="panel" id="fullStackPanel">Hello there</div>
-        </div>
       </div>
     )
   }

@@ -12,14 +12,10 @@ class Writing extends React.Component {
   render() {
     return (
       <div className="portholeBox">
-        <div id="right">
-          <div className="porthole" onClick={this.props.showPanel} id="#writingPanel">
-            <div id="writingImg">Writing</div>
-          </div>
+        <div className="porthole" onClick={this.props.showPanel} id="writingPort">
+          <div id="writingImg">Writing</div>
         </div>
-        <div id="left">
-          <div className="panel" id="writingPanel">Hello There</div>
-        </div>
+        <div className="panel" id="writingPanel">Hello There</div>
       </div>
     )
   }

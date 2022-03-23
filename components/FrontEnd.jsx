@@ -12,14 +12,10 @@ class FrontEnd extends React.Component {
   render() {
     return (
       <div className="portholeBox">
-        <div id="right">
-          <div className="porthole" onClick={this.props.showPanel} id="#frontEndPanel">
-            <div id="frontEndImg">FrontEnd</div>
-          </div>
+        <div className="porthole" onClick={this.props.showPanel} id="frontEndPort">
+          <div id="frontEndImg">FrontEnd</div>
         </div>
-        <div id="left">
-          <div className="panel" id="frontEndPanel">Hello there</div>
-        </div>
+        <div className="panel" id="frontEndPanel">Hello there</div>
       </div>
     )
   }

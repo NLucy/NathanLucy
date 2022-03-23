@@ -19,7 +19,6 @@ BANNER
   font-size: 5em;
   margin: 0 0 0 50%;
   color: rgba(0, 0, 0, .7);
-  /* filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 1)); */
 }
 
 
@@ -133,7 +132,16 @@ PORTHOLES
   margin: 400px 40px 0 0;
 }
 
-.porthole {
+/* .porthole {
+  float: right;
+  clear: left;
+  width: 250px;
+  height: 250px;
+  border: 15px solid rgba(0, 0, 0, .9);
+  border-radius: 250px;
+} */
+
+#fullStackPort {
   float: right;
   clear: left;
   width: 250px;
@@ -141,6 +149,34 @@ PORTHOLES
   border: 15px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
 }
+
+#frontEndPort {
+  float: right;
+  clear: left;
+  width: 250px;
+  height: 250px;
+  border: 15px solid rgba(0, 0, 0, .9);
+  border-radius: 250px;
+}
+
+#backEndPort {
+  float: right;
+  clear: left;
+  width: 250px;
+  height: 250px;
+  border: 15px solid rgba(0, 0, 0, .9);
+  border-radius: 250px;
+}
+
+#writingPort {
+  float: right;
+  clear: left;
+  width: 250px;
+  height: 250px;
+  border: 15px solid rgba(0, 0, 0, .9);
+  border-radius: 250px;
+}
+
 
 .porthole:hover {
   cursor: pointer;
@@ -188,9 +224,12 @@ PANELS
 div.panel {
   position: absolute;
   right: 5%;
-  border: 2px solid black;
+  border-left: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 250px 0 0 250px;
   height: 250px;
-  width: 250px;
+  width: 600px;
   margin-top: 15px;
   display: none;
 }
