@@ -112,7 +112,7 @@ animation:fade2 1500ms infinite;
 }
 
 @keyframes point {
-  50% {transform: rotate(-70deg);}
+  50% {transform: rotate(-60deg);}
 }
 
 #arrow3 {
@@ -123,20 +123,75 @@ animation:point 3500ms infinite;
 
 /*
 /////////////////////////////////
-PROJECTS
+PORTHOLES
 /////////////////////////////////
 */
 
 #projects {
   float: right;
+  width: 100%;
   margin: 400px 40px 0 0;
 }
 
 .porthole {
+  float: right;
+  clear: left;
   width: 250px;
   height: 250px;
-  border: 15px solid rgba(0, 0, 0, .7);
+  border: 15px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
 }
 
+.porthole:hover {
+  cursor: pointer;
+}
+
+.portholeBox {
+  display: inline-block;
+  vertical-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#fullStackImg {
+  position: relative;
+  top: 45%;
+  left: 40%;
+}
+
+#writingImg {
+  position: relative;
+  top: 45%;
+  left: 40%;
+}
+
+#frontEndImg {
+  position: relative;
+  top: 45%;
+  left: 40%;
+}
+
+#backEndImg {
+  position: relative;
+  top: 45%;
+  left: 40%;
+}
+
+
+/*
+/////////////////////////////////
+PANELS
+/////////////////////////////////
+*/
+
+
+div.panel {
+  position: absolute;
+  right: 5%;
+  border: 2px solid black;
+  height: 250px;
+  width: 250px;
+  margin-top: 15px;
+  display: none;
+}
 

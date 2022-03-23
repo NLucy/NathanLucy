@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 
 class BackEnd extends React.Component {
 
@@ -9,13 +10,21 @@ class BackEnd extends React.Component {
   }
 
   render() {
-    return(
-      <div className="porthole">
-        <div>BackEnd</div>
+    return (
+      <div id="portholeBox">
+        <div id="right">
+          <div className="porthole" onClick={this.props.showPanel} id="#backEndPanel">
+            <div id="backEndImg">BackEnd</div>
+          </div>
+        </div>
+        <div id="left">
+          <div className="panel" id="backEndPanel">Hello There</div>
+        </div>
       </div>
     )
   }
 
 }
+
 
 export default BackEnd;
