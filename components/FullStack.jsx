@@ -1,4 +1,5 @@
 import React from 'react';
+import BlueOcean from './fullstack/BlueOcean.jsx';
 import $ from 'jquery';
 
 class FullStack extends React.Component {
@@ -11,11 +12,14 @@ class FullStack extends React.Component {
 
   render() {
     return (
-      <div className="portholeBox">
-          <div className="porthole" onClick={this.props.showPanel} id="fullStackPort">
-            <div id="fullStackImg">FullStack</div>
-          </div>
-          <div className="panel" id="fullStackPanel">Hello there</div>
+      <div className="portholeBox" id="portholeBoxFullStack">
+        <div className="closeBox" onClick={this.props.closePanel} id="closeFullStack">x</div>
+        <div className="porthole fullStackPort" onClick={this.props.showPanel} id="fullStackPort">
+          <div id="fullStackImg" className="portHoleTitle">FullStack</div>
+        </div>
+        <div className="panel" id="fullStackPanel">
+          <BlueOcean />
+        </div>
       </div>
     )
   }

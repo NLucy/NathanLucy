@@ -141,12 +141,27 @@ PORTHOLES
   border-radius: 250px;
 } */
 
-#fullStackPort {
+.portHoleTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.fullStackPort {
   float: right;
   clear: left;
   width: 250px;
   height: 250px;
-  border: 15px solid rgba(0, 0, 0, .9);
+  border: 10px solid rgba(0, 0, 0, .9);
+  border-radius: 250px;
+}
+
+.noPort {
+  float: right;
+  visibility: hidden;
+  clear: left;
+  width: 250px;
+  height: 250px;
+  /* border-right: 1px solid rgba(0, 0, 0, .9); */
   border-radius: 250px;
 }
 
@@ -155,7 +170,7 @@ PORTHOLES
   clear: left;
   width: 250px;
   height: 250px;
-  border: 15px solid rgba(0, 0, 0, .9);
+  border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
 }
 
@@ -164,7 +179,7 @@ PORTHOLES
   clear: left;
   width: 250px;
   height: 250px;
-  border: 15px solid rgba(0, 0, 0, .9);
+  border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
 }
 
@@ -173,7 +188,7 @@ PORTHOLES
   clear: left;
   width: 250px;
   height: 250px;
-  border: 15px solid rgba(0, 0, 0, .9);
+  border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
 }
 
@@ -192,25 +207,25 @@ PORTHOLES
 #fullStackImg {
   position: relative;
   top: 45%;
-  left: 40%;
+  left: 39%;
 }
 
 #writingImg {
   position: relative;
   top: 45%;
-  left: 40%;
+  left: 39%;
 }
 
 #frontEndImg {
   position: relative;
   top: 45%;
-  left: 40%;
+  left: 37%;
 }
 
 #backEndImg {
   position: relative;
   top: 45%;
-  left: 40%;
+  left: 37%;
 }
 
 
@@ -224,13 +239,62 @@ PANELS
 div.panel {
   position: absolute;
   right: 5%;
-  border-left: 1px solid rgba(0, 0, 0, .3);
-  border-bottom: 1px solid rgba(0, 0, 0, .3);
-  border-top: 1px solid rgba(0, 0, 0, .3);
-  border-radius: 250px 0 0 250px;
+  border-left: 5px solid rgba(0, 0, 0, .3);
+  border-bottom: 5px solid rgba(0, 0, 0, .3);
+  border-top: 5px solid rgba(0, 0, 0, .3);
+  border-right: 5px solid rgba(0, 0, 0, .3);
+  border-radius: 250px 250px 250px 250px;
   height: 250px;
-  width: 600px;
-  margin-top: 15px;
+  width: 770px;
+  margin-top: 0px;
   display: none;
+}
+
+.closeBox {
+  display: none;
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid rgba(0, 0, 0, .3); */
+  /* border-radius: 30px; */
+  position: relative;
+  left: 95%;
+  top: 0;
+  font-family: 'Palette Mosaic', cursive;
+  font-size: 2em;
+}
+
+.closeBox:hover {
+  cursor: pointer;
+}
+
+
+/*
+/////////////////////////////////
+PROJECT DESCRIPTIONS
+/////////////////////////////////
+*/
+
+.projectDescription {
+  margin: 4% 0 0 10%;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  max-height: 200px;
+  overflow: scroll;
+}
+
+.titleLine {
+  font-weight: bold;
+}
+
+.techLine {
+  font-weight: medium;
+}
+
+.bulletLine {
+
+}
+
+.linkLine {
+
 }
 

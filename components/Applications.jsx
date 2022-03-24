@@ -16,10 +16,10 @@ class Applications extends React.Component {
   render() {
     return (
       <div>
-        <FullStack showPanel={this.props.showPanel}/>
-        <Writing showPanel={this.props.showPanel}/>
-        <FrontEnd showPanel={this.props.showPanel}/>
-        <BackEnd showPanel={this.props.showPanel}/>
+        <FullStack showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
+        <Writing showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
+        <FrontEnd showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
+        <BackEnd showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
       </div>
     )
   }
