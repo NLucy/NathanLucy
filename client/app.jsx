@@ -27,10 +27,8 @@ class App extends React.Component {
         left: 200
       }, 500);
       target.addClass('active');
-      porthole.css({ 'visibility' : 'hidden' });
-      closeBox.css({ 'display' : 'inline-block' });
-      // porthole.removeClass('fullStackPort');
-      // porthole.addClass('noPort');
+      porthole.css({ 'visibility': 'hidden' });
+      closeBox.css({ 'display': 'inline-block' });
     } else {
       target.removeAttr('style');
       target.removeClass('active');
@@ -48,20 +46,30 @@ class App extends React.Component {
 
     var target = $(`#${e.target.id}`);
 
-    porthole.css({ "visibility" : "visible" });
-    panel.css({ "display" : "none" });
-    target.css({ "display" : "none" });
+    porthole.css({ "visibility": "visible" });
+    panel.css({ "display": "none" });
+    target.css({ "display": "none" });
 
   }
 
   render() {
     return (
       <div>
-        <div id="title">nathanLucy</div>
-        <Hello />
-        <LookDown />
-        <div id="projects">
-          <Applications showPanel={this.showPanel} closePanel={this.closePanel}/>
+        <div id="frame">
+          <div id="titlebox">
+            <div id="title">nathanLucy</div>
+          </div>
+          <div id="hellobox">
+          <Hello />
+          </div>
+          <LookDown />
+          <div id="projects">
+            <Applications showPanel={this.showPanel} closePanel={this.closePanel} />
+          </div>
+          <div id="footerbox">
+          <div id="footer">get in touch:</div>
+          <div id="email">cosmocoder1@gmail.com</div>
+          </div>
         </div>
       </div>
     )

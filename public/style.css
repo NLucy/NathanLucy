@@ -1,5 +1,12 @@
 body {
   /* background-color: rgba(245, 245, 220, 1); */
+  text-align: center;
+  min-width: 430px;
+}
+
+#frame {
+  max-width: 1054px;
+  margin: 0 auto;
 }
 
 #app {
@@ -13,13 +20,24 @@ BANNER
 */
 
 
+#titlebox {
+  max-width: 100%;
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
 #title {
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 700;
   font-size: 5em;
-  margin: 0 0 0 50%;
+  margin: 0 20px 0 0;
+  float: right;
   color: rgba(0, 0, 0, .7);
 }
+
+
+
 
 
 /*
@@ -130,16 +148,11 @@ PORTHOLES
   float: right;
   width: 100%;
   margin: 400px 40px 0 0;
+  /* position: absolute; */
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 2;
 }
 
-/* .porthole {
-  float: right;
-  clear: left;
-  width: 250px;
-  height: 250px;
-  border: 15px solid rgba(0, 0, 0, .9);
-  border-radius: 250px;
-} */
 
 .portHoleTitle {
   font-family: 'Montserrat', sans-serif;
@@ -200,32 +213,24 @@ PORTHOLES
 .portholeBox {
   display: inline-block;
   vertical-align: center;
-  width: 100%;
+  width: 90%;
   margin-top: 15px;
 }
 
 #fullStackImg {
-  position: relative;
-  top: 45%;
-  left: 39%;
+  margin: 100px 20px 20px 20px;
 }
 
 #writingImg {
-  position: relative;
-  top: 45%;
-  left: 39%;
+  margin: 100px 20px 20px 20px;
 }
 
 #frontEndImg {
-  position: relative;
-  top: 45%;
-  left: 37%;
+  margin: 100px 20px 20px 20px;
 }
 
 #backEndImg {
-  position: relative;
-  top: 45%;
-  left: 37%;
+  margin: 100px 20px 20px 20px;
 }
 
 
@@ -245,22 +250,23 @@ div.panel {
   border-right: 5px solid rgba(0, 0, 0, .3);
   border-radius: 250px 250px 250px 250px;
   height: 250px;
-  width: 770px;
+  max-width: 770px;
   margin-top: 0px;
   display: none;
+  margin: 0 auto;
 }
 
 .closeBox {
   display: none;
+  position: relative;
   width: 30px;
   height: 30px;
-  /* border: 2px solid rgba(0, 0, 0, .3); */
-  /* border-radius: 30px; */
-  position: relative;
-  left: 95%;
   top: 0;
+  right: -40px;
   font-family: 'Palette Mosaic', cursive;
   font-size: 2em;
+  z-index: 1;
+  float: right;
 }
 
 .closeBox:hover {
@@ -275,11 +281,12 @@ PROJECT DESCRIPTIONS
 */
 
 .projectDescription {
-  margin: 4% 0 0 10%;
+  margin: 5% 0 0 0;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   max-height: 200px;
   overflow: scroll;
+  max-width: 80%;
 }
 
 .titleLine {
@@ -290,11 +297,88 @@ PROJECT DESCRIPTIONS
   font-weight: medium;
 }
 
-.bulletLine {
 
+/*
+/////////////////////////////////
+FOOTER
+/////////////////////////////////
+*/
+
+#footerbox {
+  position: fixed;
+  top: 400px;
+  left: 60%;
+  text-align: left;
 }
 
-.linkLine {
-
+#footer {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 3em;
+  text-decoration: underline;
+  margin: 10px;
+  z-index: -1;
 }
 
+#email {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5em;
+  color: black;
+  margin-left: 20px;
+}
+
+
+
+/*
+/////////////////////////////////
+RESPONSIVENESS
+/////////////////////////////////
+*/
+
+
+@media only screen and (max-width: 800px) {
+  div.panel {
+    /* position: absolute; */
+    min-width: 330px;
+    margin-right: 10%;
+  }
+  .projectDescription {
+    max-width: 80%;
+    margin: 8% 0 0 0;
+  }
+  @keyframes point {
+    50% {transform: rotate(-50deg);}
+  }
+}
+
+  @media only screen and (max-width: 575px) {
+    #title {
+      font-size: 4em;
+    }
+    #hello {
+      font-size: 1.7em;
+    }
+    #projects {
+      margin: 300px 40px 0 0;
+    }
+    @keyframes point {
+      50% {transform: rotate(-40deg);}
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  #title {
+    font-size: 3em;
+  }
+  #hello {
+    font-size: 1.5em;
+  }
+  #projects {
+    margin: 230px 40px 0 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  @keyframes point {
+    50% {transform: rotate(-20deg);}
+  }
+}
