@@ -15,7 +15,7 @@ class Applications extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="applicationsPanel">
         <FullStack showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
         <Writing showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>
         <FrontEnd showPanel={this.props.showPanel} closePanel={this.props.closePanel}/>

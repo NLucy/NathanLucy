@@ -1,1 +1,7 @@
 node_modules
+public/bundle.js
+public/bundle.js.gz
+public/bundle.js.LICENSE.txt
+public/bundle.js.LICENSE.txt.gz
+public/bundle.js.map
+public/bundle.js.map.gz
