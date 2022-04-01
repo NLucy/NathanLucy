@@ -46,14 +46,25 @@ BIO
 /////////////////////////////////
 */
 
+#hellobox {
+  display: flex;
+  justify-content: space-between;
+}
 
 #hello {
+  display: inline-block;
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 300;
   font-size: 2em;
   color: rgba(0, 0, 0, .9);
   width: 400px;
   margin: 5% 0 0 1%;
+}
+
+#self_img {
+  width: 150px;
+  height: 190px;
+  margin: 40px 40px 0 0;
 }
 
 
@@ -174,6 +185,10 @@ PORTHOLES
   height: 250px;
   border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
+  background-image: url('./assets/FullStackBackground.jpg');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
 }
 
 .noPort {
@@ -193,6 +208,7 @@ PORTHOLES
   height: 250px;
   border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
+  background-image: url('./assets/FrontEndbackground.jpg');
 }
 
 #backEndPort {
@@ -202,6 +218,9 @@ PORTHOLES
   height: 250px;
   border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
+  background-image: url('./assets/BackendBackground.jpg');
+  background-size: 100%;
+  background-position: 40% 80%;
 }
 
 #writingPort {
@@ -211,6 +230,8 @@ PORTHOLES
   height: 250px;
   border: 10px solid rgba(0, 0, 0, .9);
   border-radius: 250px;
+  background-image: url('./assets/WritingBackground.jpg');
+  background-position: 80% 25%;
 }
 
 
@@ -224,7 +245,7 @@ PORTHOLES
   z-index: 1;
   vertical-align: center;
   width: 90%;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 #fullStackImg {
@@ -366,6 +387,26 @@ RESPONSIVENESS
   }
 }
 
+@media only screen and (max-width: 750px) {
+  #footerbox {
+    top: 400px;
+    left: 50%;
+  }
+  #footer {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 10px;
+    z-index: -1;
+  }
+  #email {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1em;
+    color: black;
+    margin-left: 20px;
+  }
+}
+
   @media only screen and (max-width: 575px) {
     #title {
       font-size: 4em;
@@ -373,8 +414,14 @@ RESPONSIVENESS
     #hello {
       font-size: 1.7em;
     }
+    #hellobox {
+      display: block;
+    }
     #projects {
-      margin: 300px 40px 0 0;
+      margin: 330px 40px 0 0;
+    }
+    #hellobox {
+      text-align: left;
     }
     @keyframes point {
       50% {transform: rotate(-40deg);}
@@ -389,7 +436,7 @@ RESPONSIVENESS
     font-size: 1.5em;
   }
   #projects {
-    margin: 230px 40px 0 0;
+    margin: 270px 40px 0 0;
   }
 }
 

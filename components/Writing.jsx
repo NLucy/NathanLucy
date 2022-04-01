@@ -18,7 +18,9 @@ class Writing extends React.Component {
           <div id="writingImg" className="portHoleTitle">Writing</div>
         </div>
         <div className="panel" id="writingPanel">
-        <WritingProj />
+          <div className="projectDescription">
+            <WritingProj />
+          </div>
         </div>
       </div>
     )

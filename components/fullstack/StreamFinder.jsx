@@ -3,7 +3,7 @@ import React from 'react';
 var StreamFinder = (props) => {
 
   return (
-    <div className="projectDescription">
+    <div>
       <div className="titleLine">StreamFinder - cross platform streaming service app</div>
       <div className="techLine">React | MongoDB | NGINX | AWS | Webpack | Babel</div>
       <br></br>

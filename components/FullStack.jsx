@@ -1,5 +1,6 @@
 import React from 'react';
 import StreamFinder from './fullstack/StreamFinder.jsx';
+import WordleMate from './fullstack/WordleMate.jsx';
 import $ from 'jquery';
 
 class FullStack extends React.Component {
@@ -18,7 +19,10 @@ class FullStack extends React.Component {
           <div id="fullStackImg" className="portHoleTitle">Full Stack</div>
         </div>
         <div className="panel" id="fullStackPanel">
+          <div className="projectDescription">
           <StreamFinder />
+          <WordleMate />
+          </div>
         </div>
       </div>
     )

@@ -3,20 +3,20 @@ import React from 'react';
 var BackEndProj = (props) => {
 
   return (
-    <div className="projectDescription">
-      <div className="titleLine">Project Title - description</div>
-      <div className="bulletLine">- bullet 1</div>
-      <div className="bulletLine">- bullet 2</div>
-      <div className="bulletLine">- bullet 3</div>
-      <div className="bulletLine">- bullet 4</div>
-      <div className="linkLine">github link</div>
-      <div>commments</div>
-      <div>commments</div>
-      <div>commments</div>
-      <div>commments</div>
-      <div>commments</div>
-      <div>commments</div>
-      <div>commments</div>
+    <div>
+      <div className="titleLine">Product Detail - microservice API</div>
+      <div className="techLine">Express | MongoDB | K6 | Loader.io | NGINX | AWS</div>
+      <br></br>
+      <div className="bullets">
+        <div className="bulletLine">- Built out server routes and database controllers to handle industrial-scale traffic</div>
+        <div className="bulletLine">- Deployed and optimized on AWS (EC2)</div>
+        <div className="bulletLine">- Increased throughput from 100 to 2000 RPS with 0% error rate using indexing, memoization and horizontal scaling with a four server round-robin configuration
+        </div>
+      </div>
+      <br></br>
+      <a className="linkLine" href="https://github.com/cosmocoder1/cactus-oasis-rev">github</a>
+      <br></br>
+      <br></br>
     </div>
   )
 

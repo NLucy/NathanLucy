@@ -18,7 +18,9 @@ class FrontEnd extends React.Component {
           <div id="frontEndImg" className="portHoleTitle">FrontEnd</div>
         </div>
         <div className="panel" id="frontEndPanel">
-        <FrontEndProj />
+          <div className="projectDescription">
+            <FrontEndProj />
+          </div>
         </div>
       </div>
     )

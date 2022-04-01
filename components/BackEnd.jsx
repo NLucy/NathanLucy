@@ -18,7 +18,9 @@ class BackEnd extends React.Component {
           <div id="backEndImg" className="portHoleTitle">BackEnd</div>
         </div>
         <div className="panel" id="backEndPanel">
-        <BackEndProj />
+          <div className="projectDescription">
+            <BackEndProj />
+          </div>
         </div>
       </div>
     )
