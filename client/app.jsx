@@ -4,7 +4,7 @@ import Hello from '../components/Hello.jsx';
 import LookDown from '../components/LookDown.jsx';
 import Applications from '../components/Applications.jsx';
 import Writing from '../components/Writing.jsx';
-import img from '../public/assets/PopMe.jpg';
+import img from '../public/assets/PopMe2.jpg';
 import $ from 'jquery';
 
 class App extends React.Component {
