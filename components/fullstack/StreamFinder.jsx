@@ -10,8 +10,6 @@ var StreamFinder = (props) => {
       <div className="bullets">
         <div className="bulletLine">- created responsive UI and intuitive UX</div>
         <div className="bulletLine">- constructed CI/CD pipeline from repo to AWS</div>
-        <div className="bulletLine">- improved all Lighthouse optimization params from 50-100%</div>
-        <div className="bulletLine">- horizontally scaled application to handle 2000 RPS with 0% error rate</div>
         <div className="bulletLine">- acted as Architecture Owner for the project</div>
       </div>
       <br></br>
