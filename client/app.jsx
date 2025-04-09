@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Hello from '../components/Hello.jsx';
 import LookDown from '../components/LookDown.jsx';
 import Applications from '../components/Applications.jsx';
+import TalkToNathan from '../components/TalkToNathan.jsx';
 import Writing from '../components/Writing.jsx';
 import img from '../public/assets/PopMe2.jpg';
 import $ from 'jquery';
@@ -58,24 +59,33 @@ class App extends React.Component {
       <div>
         <div id="frame">
           <div id="titlebox">
-            <div id="title">nathanLucy</div>
+            <div id="title">NathanLucy</div>
           </div>
+
           <div id="hellobox">
-          <Hello />
-          <img src={img} id="self_img"></img>
+            <Hello />
+            <img src={img} id="self_img" />
           </div>
+
+          <div style={{ marginTop: "60px", position: "relative" }}>
+            <TalkToNathan />
+          </div>
+
           <LookDown />
+
           <div id="projects">
             <Applications showPanel={this.showPanel} closePanel={this.closePanel} />
           </div>
+
           <div id="footerbox">
-          <div id="footer">get in touch:</div>
-          <div id="email">cosmocoder1@gmail.com</div>
+            <div id="footer">get in touch:</div>
+            <div id="email">cosmocoder1@gmail.com</div>
           </div>
         </div>
       </div>
-    )
+    );
   }
+
 
 }
 
