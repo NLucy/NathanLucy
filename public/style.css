@@ -362,6 +362,48 @@ TALK TO NATHAN
 }
 
 
+/*
+/////////////////////////////////
+CERTIFICATIONS
+/////////////////////////////////
+*/
+
+
+
+#certifications {
+  text-align: center;
+  margin: 60px auto 20px;
+}
+
+.certTitle {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.certRow {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1em;
+  max-width: 120px;
+}
+
+.cert img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 
 
 

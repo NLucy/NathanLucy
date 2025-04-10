@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Hello from '../components/Hello.jsx';
 import LookDown from '../components/LookDown.jsx';
 import Applications from '../components/Applications.jsx';
+import Certifications from "../components/Certifications.jsx";
 import TalkToNathan from '../components/TalkToNathan.jsx';
 import Writing from '../components/Writing.jsx';
 import img from '../public/assets/PopMe2.jpg';
@@ -76,6 +77,8 @@ class App extends React.Component {
           <div id="projects">
             <Applications showPanel={this.showPanel} closePanel={this.closePanel} />
           </div>
+
+          <Certifications />
 
           <div id="footerbox">
             <div id="footer">get in touch:</div>
