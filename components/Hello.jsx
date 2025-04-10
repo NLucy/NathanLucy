@@ -3,7 +3,7 @@ import React from 'react';
 var Hello = (props) => {
   return (
     <div>
-      <div id="hello">Hi<br></br> I'm a software engineer<br></br> and explorer. <br></br> I care about simplicity and intuition.</div>
+      <div id="hello">I'm an AI/ML engineer<br></br> focused on bulding practical tools that work,<br></br>scale and stay intuitive.</div>
     </div>
   )
 }

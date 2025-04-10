@@ -19,7 +19,6 @@ const AdBrain = (props) => {
             <div className="bulletLine">- Developed Seq2Seq NLP networks for sentence completion and contextual marketing insights</div>
           </div>
           <br />
-          <a href="https://github.com/cosmocoder1/adbrain" target="_blank">GitHub</a>
           <br /><br />
         </div>
       </div>
