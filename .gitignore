@@ -7,3 +7,5 @@ public/bundle.js.map
 public/bundle.js.map.gz
 
 .env
+
+server/
