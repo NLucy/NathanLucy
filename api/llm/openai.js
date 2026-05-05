@@ -15,15 +15,6 @@ export const getOpenAIClient = () => {
   return client;
 };
 
-export const embedTexts = async (input) => {
-  const response = await getOpenAIClient().embeddings.create({
-    model: config.embeddingModel,
-    input
-  });
-
-  return response.data.map((item) => item.embedding);
-};
-
 export const createResponse = async ({ messages, ...options }) => {
   const response = await getOpenAIClient().responses.create({
     model: config.openaiModel,
