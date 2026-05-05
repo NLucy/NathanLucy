@@ -1,13 +1,111 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <link href="./style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nathan Lucy - AI/ML Engineer">
+    <title>Nathan Lucy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&family=Palette+Mosaic&family=Montserrat:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script src="bundle.js"></script>
+    <header class="site-header">
+      <a class="brand" href="#top">Nathan Lucy</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#interview">Talk</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-role">AI/ML Engineer</p>
+          <h1 id="hero-title">Applied AI systems engineering.</h1>
+          <p class="hero-summary" id="hero-summary"></p>
+          <div class="hero-actions" id="hero-links"></div>
+        </div>
+        <figure class="portrait-wrap">
+          <img id="portrait" src="/assets/PopMe2.jpg" alt="Nathan Lucy">
+        </figure>
+      </section>
+
+      <section class="section section-tight" aria-labelledby="strengths-title">
+        <div class="section-heading">
+          <p class="eyebrow">Focus</p>
+          <h2 id="strengths-title">Where I’m useful</h2>
+        </div>
+        <div class="strength-grid" id="strengths"></div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Technical skills</p>
+          <h2 id="skills-title">The working toolkit</h2>
+        </div>
+        <div class="skill-grid" id="skills"></div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="work-title">Recent work</h2>
+        </div>
+        <div class="timeline" id="experience"></div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected systems</p>
+          <h2 id="projects-title">Selected systems and research</h2>
+        </div>
+        <div class="project-grid" id="project-list"></div>
+      </section>
+
+      <section class="interview" id="interview" aria-labelledby="interview-title">
+        <div>
+          <p class="eyebrow">Let’s talk</p>
+          <h2 id="interview-title">Talk with me about the work.</h2>
+          <p>Ask about projects, technical judgment, how I approach AI systems, or what I’d build next.</p>
+        </div>
+        <form id="ask-form" class="ask-form">
+          <label for="question">Question</label>
+          <div class="ask-row">
+            <textarea id="question" name="question" rows="3" placeholder="Ask me about LLM systems, forecasting, MarketMaven, work style, or what I’d build next..."></textarea>
+            <button type="submit">Send</button>
+          </div>
+          <output id="answer" class="answer" aria-live="polite"></output>
+        </form>
+      </section>
+
+      <section class="section details" aria-label="Credentials and education">
+        <div>
+          <p class="eyebrow">Credentials</p>
+          <ul id="certifications"></ul>
+        </div>
+        <div>
+          <p class="eyebrow">Education</p>
+          <ul id="education"></ul>
+        </div>
+        <div>
+          <p class="eyebrow">Interests</p>
+          <ul id="interests"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <span>Available for AI engineering and LLM product work.</span>
+      <div class="footer-links">
+        <a id="phone-link" href="tel:+19707491721">+1 970 749 1721</a>
+        <a id="email-link" href="mailto:nathanalucy@gmail.com">nathanalucy@gmail.com</a>
+      </div>
+    </footer>
+
+    <script src="/app.js" type="module"></script>
   </body>
 </html>
