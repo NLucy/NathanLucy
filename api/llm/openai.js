@@ -19,7 +19,7 @@ export const createResponse = async ({ messages, ...options }) => {
   const response = await getOpenAIClient().responses.create({
     model: config.openaiModel,
     input: messages,
-    max_output_tokens: 700,
+    max_output_tokens: 1400,
     ...options
   });
 

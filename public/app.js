@@ -11,7 +11,7 @@ const escapeHtml = (value = "") =>
 const listItems = (items) => items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 
 const loadProfile = async () => {
-  const response = await fetch("/api/profile");
+  const response = await fetch("/content/profile.json");
   if (!response.ok) throw new Error("Could not load profile content");
   return response.json();
 };
