@@ -19,7 +19,7 @@
     }
   ],
   "headline": "Applied AI systems engineering.",
-  "summary": "I build production-grade AI systems: agent architecture, MCP-style tool interfaces, custom retrieval, evaluation loops, forecasting systems, data pipelines, and model-facing applications people can actually operate. My background in psychology, premedical biochemistry, and cognition keeps the work grounded in how people think, decide, and trust systems.",
+  "summary": "I build production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, forecasting systems, data pipelines, and model-facing applications people can actually operate. My background in psychology, premedical biochemistry, and cognition keeps the work grounded in how people think, decide, and trust systems.",
   "portrait": "/assets/PopMe2.jpg",
   "strengths": [
     "Agent architecture, tool use, and context-aware LLM systems",
@@ -40,7 +40,7 @@
     },
     {
       "group": "Advanced AI Systems",
-      "items": ["Agent architecture", "MCP-style tools", "Function calling", "Model routing", "Context engineering", "Evaluation harnesses", "Safety constraints", "Human-in-the-loop review"]
+      "items": ["Agent architecture", "Structured tool use", "Function calling", "Model routing", "Context engineering", "Evaluation harnesses", "Safety constraints", "Human-in-the-loop review"]
     },
     {
       "group": "Retrieval and Vector Systems",

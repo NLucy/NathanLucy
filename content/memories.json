@@ -2,7 +2,7 @@
   {
     "id": "positioning",
     "title": "Professional positioning",
-    "text": "Nathan A. Lucy is a GenAI Systems Developer in Austin, Texas who is remote ready. He works full-time at Prolego and is also Founder and AI Engineer at Elemental AI. He builds production-grade AI systems: agent architecture, MCP-style tool interfaces, custom retrieval, evaluation loops, vector-native applications, forecasting systems, custom model APIs, and data products. He is strongest where machine learning, data infrastructure, evaluation, and human-centered product thinking meet."
+    "text": "Nathan A. Lucy is a GenAI Systems Developer in Austin, Texas who is remote ready. He works full-time at Prolego and is also Founder and AI Engineer at Elemental AI. He builds production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, vector-native applications, forecasting systems, custom model APIs, and data products. He is strongest where machine learning, data infrastructure, evaluation, and human-centered product thinking meet."
   },
   {
     "id": "contact",
@@ -12,12 +12,12 @@
   {
     "id": "technical-skills",
     "title": "Technical skills",
-    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, agent architecture, MCP-style tools, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
+    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, agent architecture, structured tool use, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
   },
   {
     "id": "prolego",
     "title": "Prolego",
-    "text": "Nathan works full-time at Prolego as a GenAI Systems Developer from June 2025 to present, based in Austin, Texas and remote. He builds custom LLM tools and context-aware systems for enterprise clients, focused on shipping generative AI applications that are scalable, safe, and effective. Prolego's public approach is Performance-Driven Development: capture representative data and tasks, optimize the LLM solution, build a performance evaluation framework, and report progress with metrics such as task performance, confidence, latency, cost, robustness, and risk. Nathan's Prolego positioning is strongest around agent architecture, MCP-style tool interfaces, custom retrieval, context architecture, model-facing tools, evaluation loops, safety constraints, and making AI behavior transparent enough for business stakeholders to trust."
+    "text": "Nathan works full-time at Prolego as a GenAI Systems Developer from June 2025 to present, based in Austin, Texas and remote. He builds custom LLM tools and context-aware systems for enterprise clients, focused on shipping generative AI applications that are scalable, safe, and effective. Prolego's public approach is Performance-Driven Development: capture representative data and tasks, optimize the LLM solution, build a performance evaluation framework, and report progress with metrics such as task performance, confidence, latency, cost, robustness, and risk. Nathan's Prolego positioning is strongest around agent architecture, structured tool use for production AI systems, custom retrieval, context architecture, model-facing tools, evaluation loops, safety constraints, and making AI behavior transparent enough for business stakeholders to trust."
   },
   {
     "id": "background",
