@@ -25,3 +25,12 @@ export const createResponse = async ({ messages, ...options }) => {
 
   return response.output_text?.trim() || "";
 };
+
+export const streamResponse = async ({ messages, ...options }) =>
+  getOpenAIClient().responses.create({
+    model: config.openaiModel,
+    input: messages,
+    max_output_tokens: 1400,
+    stream: true,
+    ...options
+  });

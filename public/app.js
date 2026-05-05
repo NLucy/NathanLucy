@@ -16,6 +16,42 @@ const loadProfile = async () => {
   return response.json();
 };
 
+const parseStreamEvent = (eventBlock) => {
+  const event = { event: "message", data: "" };
+
+  for (const line of eventBlock.split("\n")) {
+    if (line.startsWith("event:")) event.event = line.slice(6).trim();
+    if (line.startsWith("data:")) event.data += line.slice(5).trimStart();
+  }
+
+  return {
+    event: event.event,
+    data: event.data ? JSON.parse(event.data) : {}
+  };
+};
+
+const readEventStream = async (response, onEvent) => {
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+
+  while (true) {
+    const { value, done } = await reader.read();
+    buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+
+    const events = buffer.split(/\n\n/);
+    buffer = events.pop() || "";
+
+    for (const eventBlock of events) {
+      if (eventBlock.trim()) onEvent(parseStreamEvent(eventBlock));
+    }
+
+    if (done) break;
+  }
+
+  if (buffer.trim()) onEvent(parseStreamEvent(buffer));
+};
+
 const renderProfile = (profile) => {
   document.title = profile.name;
   byId("hero-role").textContent = `${profile.role} · ${profile.location}`;
@@ -92,14 +128,38 @@ const setupInterview = () => {
     try {
       const response = await fetch("/api/ask", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: value })
+        headers: {
+          "Accept": "text/event-stream",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ question: value, stream: true })
       });
 
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "Request failed");
+      if (!response.ok) {
+        const data = await response.json();
+        throw new Error(data.error || "Request failed");
+      }
 
-      answer.textContent = data.answer;
+      if (!response.body || !response.headers.get("Content-Type")?.includes("text/event-stream")) {
+        const data = await response.json();
+        answer.textContent = data.answer;
+        question.value = "";
+        return;
+      }
+
+      let streamedAnswer = "";
+
+      await readEventStream(response, ({ event, data }) => {
+        if (event === "delta") {
+          streamedAnswer += data.text || "";
+          answer.textContent = streamedAnswer;
+        }
+
+        if (event === "error") {
+          throw new Error(data.error || "Interview assistant failed");
+        }
+      });
+
       question.value = "";
     } catch (error) {
       answer.textContent = `I could not answer that yet. ${error.message}`;

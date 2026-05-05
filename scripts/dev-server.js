@@ -30,6 +30,9 @@ const readBody = async (request) => {
 
 const createResponse = (serverResponse) => ({
   setHeader: (...args) => serverResponse.setHeader(...args),
+  flushHeaders: (...args) => serverResponse.flushHeaders(...args),
+  write: (...args) => serverResponse.write(...args),
+  end: (...args) => serverResponse.end(...args),
   status(statusCode) {
     serverResponse.statusCode = statusCode;
     return this;

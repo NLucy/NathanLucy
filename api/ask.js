@@ -1,14 +1,47 @@
 import { config } from "./llm/config.js";
-import { createResponse } from "./llm/openai.js";
+import { createResponse, streamResponse } from "./llm/openai.js";
 import { buildInterviewMessages } from "./llm/messages.js";
 import { runTool } from "./llm/tools.js";
 
 const json = (response, status, body) => response.status(status).json(body);
+const wantsStream = (request) => String(request.headers?.accept || "").includes("text/event-stream") || Boolean(request.body?.stream);
 
 const answerQuestion = async ({ question, memories }) => {
   const messages = await buildInterviewMessages({ question, memories });
 
   return createResponse({ messages });
+};
+
+const streamQuestion = async ({ question, memories, response }) => {
+  const messages = await buildInterviewMessages({ question, memories });
+  const stream = await streamResponse({ messages });
+
+  for await (const event of stream) {
+    if (event.type === "response.output_text.delta" && event.delta) {
+      sendEvent(response, "delta", { text: event.delta });
+    }
+  }
+};
+
+const serializeMemories = (matches) =>
+  matches.map((match) => ({
+    id: match.id,
+    title: match.title,
+    source: match.source,
+    score: Number(match.score || match.bm25Score || 0).toFixed(3)
+  }));
+
+const startStream = (response) => {
+  response.status(200);
+  response.setHeader("Content-Type", "text/event-stream; charset=utf-8");
+  response.setHeader("Cache-Control", "no-cache, no-transform");
+  response.setHeader("Connection", "keep-alive");
+  response.flushHeaders?.();
+};
+
+const sendEvent = (response, event, data = {}) => {
+  response.write(`event: ${event}\n`);
+  response.write(`data: ${JSON.stringify(data)}\n\n`);
 };
 
 export default async function handler(request, response) {
@@ -29,6 +62,28 @@ export default async function handler(request, response) {
 
   try {
     const retrieval = await runTool("search_memories", { query: question });
+    const memories = serializeMemories(retrieval.matches);
+
+    if (wantsStream(request)) {
+      startStream(response);
+      sendEvent(response, "meta", {
+        retrieval: retrieval.mode,
+        model: config.openaiModel,
+        tools: ["search_memories"],
+        memories
+      });
+
+      try {
+        await streamQuestion({ question, memories: retrieval.matches, response });
+        sendEvent(response, "done");
+      } catch (error) {
+        console.error(error);
+        sendEvent(response, "error", { error: "Interview assistant failed" });
+      }
+
+      return response.end();
+    }
+
     const answer = await answerQuestion({ question, memories: retrieval.matches });
 
     return json(response, 200, {
@@ -36,12 +91,7 @@ export default async function handler(request, response) {
       retrieval: retrieval.mode,
       model: config.openaiModel,
       tools: ["search_memories"],
-      memories: retrieval.matches.map((match) => ({
-        id: match.id,
-        title: match.title,
-        source: match.source,
-        score: Number(match.score || match.bm25Score || 0).toFixed(3)
-      }))
+      memories
     });
   } catch (error) {
     console.error(error);
