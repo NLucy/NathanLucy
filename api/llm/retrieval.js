@@ -1,7 +1,5 @@
-import { readFile } from "node:fs/promises";
 import { config } from "./config.js";
-
-let memoryCache;
+import { memories } from "./memory-data.js";
 
 const stopwords = new Set([
   "about",
@@ -32,14 +30,6 @@ const tokenize = (text) =>
     .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
     .filter((token) => token.length > 2 && !stopwords.has(token));
-
-const readMemories = async () => {
-  if (!memoryCache) {
-    memoryCache = JSON.parse(await readFile("content/memories.json", "utf8"));
-  }
-
-  return memoryCache;
-};
 
 const documentText = (memory) => `${memory.title}\n${memory.title}\n${memory.text}`;
 
@@ -87,7 +77,6 @@ const bm25Search = (question, memories, limit) => {
 };
 
 export const searchMemories = async ({ query, limit = config.retrievalLimit }) => {
-  const memories = await readMemories();
   return {
     mode: "bm25_json",
     matches: bm25Search(query, memories, limit)

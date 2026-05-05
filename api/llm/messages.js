@@ -1,6 +1,4 @@
-import { readFile } from "node:fs/promises";
-
-let promptCache;
+import { interviewPrompt } from "./prompts/interview.js";
 
 export class Message {
   constructor(role, content) {
@@ -28,13 +26,7 @@ export class UserMessage extends Message {
   }
 }
 
-export const loadSystemPrompt = async () => {
-  if (!promptCache) {
-    promptCache = await readFile("api/llm/prompts/interview.txt", "utf8");
-  }
-
-  return promptCache;
-};
+export const loadSystemPrompt = async () => interviewPrompt;
 
 export const formatMemoryContext = (memories) =>
   memories
