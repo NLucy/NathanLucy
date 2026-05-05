@@ -12,7 +12,7 @@
   {
     "id": "technical-skills",
     "title": "Technical skills",
-    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, agent architecture, structured tool use, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
+    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, LSTM, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, agent architecture, structured tool use, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
   },
   {
     "id": "prolego",
@@ -27,7 +27,7 @@
   {
     "id": "elemental-ai",
     "title": "Elemental AI",
-    "text": "Nathan is Founder and AI Engineer at Elemental AI from June 2023 to present. He developed MarketMaven, a vector-native finance intelligence system that applies ideas from fluid dynamics to market structure and breakout analysis. He built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity. He also supported a University of Texas Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
+    "text": "Nathan is Founder and AI Engineer at Elemental AI from June 2023 to present. He developed MarketMaven, a vector-native finance intelligence system that applies ideas from fluid dynamics to market structure and breakout analysis. He developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search without exposing internal implementation details. He built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity. He also supported a University of Texas Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
   },
   {
     "id": "avenue",
@@ -53,6 +53,11 @@
     "id": "marketmaven",
     "title": "MarketMaven",
     "text": "MarketMaven is Nathan's private intelligent quantitative finance system from 2023 to present. It uses Python, Pandas, PostgreSQL, pgvector, ChromaDB, and Django. It identifies breakout setups using feature fingerprints, ensemble scoring, probabilistic analogs, real-time separability metrics, and market-flow analogs inspired by fluid dynamics. It uses LLMs for public sentiment analysis only after qualifying sentiment against deep embedding-space context and historical signal neighborhoods."
+  },
+  {
+    "id": "noetic-search",
+    "title": "Noetic Search",
+    "text": "Noetic Search is Nathan's post-retrieval reconciliation system for hybrid search. It does not replace vector search, lexical search, rerankers, or LLM reasoning. Instead, it operates after broad candidate retrieval to select a coherent evidence surface before the LLM sees the prompt. At a high level, it uses local graph reconciliation to detect stronger evidence regions, reduce repetitive or shallow nearest-neighbor results, and expose uncertainty for inspection. On a blind hard benchmark, standard hybrid top-5 scored 0/10 while Noetic-selected top-5 from a broader candidate field scored 8/10. The detailed mechanics are private."
   },
   {
     "id": "ut-ivig-study",

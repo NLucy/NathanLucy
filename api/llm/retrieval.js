@@ -14,6 +14,7 @@ const stopwords = new Set([
   "his",
   "how",
   "nathan",
+  "search",
   "that",
   "the",
   "this",

@@ -48,7 +48,7 @@
     },
     {
       "group": "AI/ML",
-      "items": ["PyTorch", "Sklearn", "SARIMA", "Seq2Seq", "Forecasting", "Custom tuning", "Model APIs", "Inference workflows"]
+      "items": ["PyTorch", "Sklearn", "SARIMA", "LSTM", "Seq2Seq", "Forecasting", "Custom tuning", "Model APIs", "Inference workflows"]
     },
     {
       "group": "Testing and Deployment",
@@ -74,6 +74,7 @@
       "period": "Jun 2023 - Present",
       "bullets": [
         "Developed MarketMaven, a vector-native finance intelligence system that applies ideas from fluid dynamics to market structure and breakout analysis.",
+        "Developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search.",
         "Built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity.",
         "Supported a UT Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
       ]
@@ -133,6 +134,18 @@
         "Built a vector-based system to identify breakout setups using feature fingerprints, ensemble scoring, and market-flow analogs inspired by fluid dynamics.",
         "Used LLMs to interpret public sentiment only after qualifying it against deep embedding-space context and historical signal neighborhoods.",
         "Modeled investment confidence using probabilistic analogs, real-time separability metrics, and regime-aware signal comparison."
+      ]
+    },
+    {
+      "name": "Noetic Search",
+      "type": "Post-Retrieval Reconciliation System",
+      "description": "A retrieval-quality layer that turns broad hybrid search candidates into a smaller, coherent evidence surface before an LLM sees the prompt.",
+      "tags": ["Hybrid search", "Graph reconciliation", "Evidence selection", "Uncertainty", "LLM context"],
+      "period": "2025 - Present",
+      "bullets": [
+        "Designed a post-retrieval layer that preserves broad recall while selecting stronger representative evidence for downstream LLM calls.",
+        "Uses local graph reconciliation to identify coherent evidence regions, reduce repetitive nearest-neighbor results, and expose uncertainty for inspection.",
+        "Improved a blind hard benchmark from standard hybrid top-5 at 0/10 to Noetic-selected top-5 at 8/10 from a broader candidate field."
       ]
     },
     {
