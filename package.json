@@ -12,6 +12,7 @@
   "author": "Nathan Lucy",
   "license": "UNLICENSED",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "openai": "^6.36.0"
   }
 }
