@@ -142,11 +142,12 @@
       "description": "A retrieval-quality layer that turns broad hybrid search candidates into a smaller, coherent evidence surface before an LLM sees the prompt.",
       "tags": ["Hybrid search", "Graph reconciliation", "Evidence selection", "Uncertainty", "LLM context"],
       "period": "2025 - Present",
+      "link": "https://github.com/NLucy/noetic-search",
       "bullets": [
         "Designed a post-retrieval layer that preserves broad recall while selecting stronger representative evidence for downstream LLM calls.",
         "Adds a multihop-style evidence step before the LLM sees context, selecting connected support instead of isolated nearest neighbors.",
         "Uses local graph reconciliation to identify coherent evidence regions, reduce repetitive nearest-neighbor results, and expose uncertainty for inspection.",
-        "Improved a blind hard benchmark from standard hybrid top-5 at 0/10 to Noetic-selected top-5 at 8/10 from a broader candidate field."
+        "Improved mean recall from 0.738 to 0.783 across @5/@10 on HotpotQA, 2WikiMultiHopQA, MuSiQue, and clinical evidence benchmarks: a 6.1% relative improvement over hybrid."
       ]
     },
     {
