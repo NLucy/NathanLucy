@@ -1,0 +1,17 @@
+{
+  "name": "nathanlucy",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Nathan Lucy resume site with an interview assistant",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "build": "node scripts/validate-content.js",
+    "start": "node scripts/dev-server.js"
+  },
+  "author": "Nathan Lucy",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "openai": "^6.36.0"
+  }
+}

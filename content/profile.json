@@ -1,0 +1,206 @@
+{
+  "name": "Nathan A. Lucy",
+  "role": "AI Engineer",
+  "location": "Austin, Texas",
+  "phone": "+1 970 749 1721",
+  "email": "nathanalucy@gmail.com",
+  "links": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/NLucy"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/nlucy"
+    },
+    {
+      "label": "Writing",
+      "href": "https://medium.com/@cosmocoder1"
+    },
+    {
+      "label": "Consulting",
+      "href": "https://www.moonrockinstruments.com/"
+    }
+  ],
+  "headline": "Applied AI systems engineering.",
+  "summary": "I build production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, forecasting systems, data pipelines, and model-facing applications people can actually operate. My background in psychology, premedical biochemistry, and cognition keeps the work grounded in how people think, decide, and trust systems.",
+  "portrait": "/assets/PopMe2.jpg",
+  "strengths": [
+    "Agent architecture, tool use, and context-aware LLM systems",
+    "Custom retrieval, vector-native applications, and evaluation frameworks",
+    "AI/ML APIs for training, inference, forecasting, and autonomous insight",
+    "Data pipelines from backend services through Snowflake, Sigma BI, and custom UI",
+    "Quantitative modeling, separability metrics, and confidence scoring",
+    "Clear technical writing, debugging, and architecture review across unfamiliar systems"
+  ],
+  "skills": [
+    {
+      "group": "Languages and Frameworks",
+      "items": ["Python", "JavaScript ES5/ES6", "Ruby", "React", "React Native", "Redux", "Vue.js", "Django"]
+    },
+    {
+      "group": "Data and Cloud",
+      "items": ["AWS", "MySQL", "PostgreSQL", "MongoDB", "BigQuery", "Docker", "Snowflake", "Sigma BI"]
+    },
+    {
+      "group": "Advanced AI Systems",
+      "items": ["Agent architecture", "Structured tool use", "Function calling", "Model routing", "Context engineering", "Evaluation harnesses", "Safety constraints", "Human-in-the-loop review"]
+    },
+    {
+      "group": "Retrieval and Vector Systems",
+      "items": ["Custom retrieval", "Hybrid search", "Embedding search", "ChromaDB", "pgvector", "BM25", "Chunking strategy", "Similarity scoring"]
+    },
+    {
+      "group": "AI/ML",
+      "items": ["PyTorch", "Sklearn", "SARIMA", "LSTM", "Seq2Seq", "Forecasting", "Custom tuning", "Model APIs", "Inference workflows"]
+    },
+    {
+      "group": "Testing and Deployment",
+      "items": ["NGINX", "Gunicorn", "CI/CD", "Jest", "Mocha", "K6", "Loader.io"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Prolego",
+      "title": "GenAI Systems Developer",
+      "location": "Austin, Texas / Remote",
+      "period": "Jun 2025 - Present",
+      "bullets": [
+        "Building custom LLM tools and context-aware systems for enterprise clients.",
+        "Focused on shipping generative AI applications with measurable behavior, custom retrieval, and production-grade safety constraints.",
+        "Applies Performance-Driven Development principles around representative tasks, evaluation frameworks, latency, cost, robustness, and measurable progress toward production trust."
+      ]
+    },
+    {
+      "company": "Elemental AI",
+      "title": "Founder & AI Engineer",
+      "location": "Austin, Texas / Remote",
+      "period": "Jun 2023 - Present",
+      "bullets": [
+        "Developed MarketMaven, a private quantitative financial engineering platform for systematic market research, signal evaluation, and disciplined model development.",
+        "Developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search.",
+        "Built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity.",
+        "Supported a UT Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
+      ]
+    },
+    {
+      "company": "Avenue i Media",
+      "title": "Software Engineer, AI/ML Ops",
+      "location": "Remote",
+      "period": "Sep 2022 - Apr 2025",
+      "bullets": [
+        "Developed and deployed custom AI/ML APIs for training, inference, and autonomous insights.",
+        "Built full-stack data pipelines from backend services through AWS to Snowflake, Sigma dashboards, and custom UI.",
+        "Modernized platforms by integrating Vue.js with Django templates, improving UX and maintainability."
+      ]
+    },
+    {
+      "company": "Galvanize",
+      "title": "Software Engineer",
+      "location": "Remote",
+      "period": "May 2022 - Sep 2022",
+      "bullets": [
+        "Provided debugging and architectural review for student and internal projects across unfamiliar codebases.",
+        "Dockerized internal tooling and implemented caching layers using the Google Sheets API."
+      ]
+    },
+    {
+      "company": "JavaScript in Plain English",
+      "title": "Software Engineering Writer",
+      "location": "Remote",
+      "period": "Mar 2022 - Mar 2023",
+      "bullets": [
+        "Created programming articles for an online publication with more than 2 million monthly views."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MoonRock Instruments",
+      "type": "Consulting Practice",
+      "description": "Applied and research-oriented AI, statistical modeling, and infrastructure for domains where precision matters.",
+      "logo": "/assets/moonrock-instruments-logo.png",
+      "tags": ["LLM systems", "Agent architecture", "Retrieval", "Statistical modeling", "Clinical analytics", "Research infrastructure"],
+      "href": "https://www.moonrockinstruments.com/",
+      "bullets": [
+        "Builds context-aware LLM systems with agent architecture, structured tool use, and model behavior that can be evaluated.",
+        "Develops retrieval and evidence workflows for custom retrieval, vector-native applications, and post-retrieval evidence selection.",
+        "Supports quantitative modeling work across forecasting, signal evaluation, separability metrics, and confidence scoring.",
+        "Creates reproducible clinical research analytics workflows for diagnostic research and publication-oriented figures."
+      ]
+    },
+    {
+      "name": "AdBrain",
+      "type": "AI/ML API Microservice",
+      "description": "A production-grade AI/ML microservice architecture for automated model training, inference, forecasting, and contextual marketing intelligence.",
+      "tags": ["PyTorch", "Django", "Gunicorn", "NGINX", "AWS", "Seq2Seq"],
+      "period": "2022 - 2025",
+      "bullets": [
+        "Implemented automated time series forecasting pipelines and cognitive AI agent architecture.",
+        "Built scalable endpoints for training, testing, and managing deep learning and decision-tree models.",
+        "Designed flexible neural networks and custom estimators for long-running hyperparameter tuning.",
+        "Developed Seq2Seq NLP networks and retrieval-enhanced pipelines for contextual marketing insights."
+      ]
+    },
+    {
+      "name": "MarketMaven",
+      "type": "Quantitative Financial Engineering Platform",
+      "description": "A private machine-learning research platform for studying financial market behavior across large historical datasets and developing disciplined model workflows.",
+      "tags": ["Python", "Pandas", "PostgreSQL", "DNN", "LSTM", "XGBoost", "Research automation"],
+      "period": "2023 - Present",
+      "href": "https://github.com/NLucy/MarketMaven-Public",
+      "bullets": [
+        "Built private research workflows for market data management, model experimentation, opportunity screening, and repeatable review.",
+        "Worked across DNN, LSTM, and XGBoost-style modeling approaches while keeping production code, research logic, and benchmark definitions private.",
+        "Separated research, validation, and operational concerns with version discipline, controlled review, and reporting workflows."
+      ]
+    },
+    {
+      "name": "Noetic Search",
+      "type": "Post-Retrieval Reconciliation System",
+      "description": "A retrieval-quality layer that turns broad hybrid search candidates into a smaller, coherent evidence surface before an LLM sees the prompt.",
+      "tags": ["Hybrid search", "Graph reconciliation", "Evidence selection", "Uncertainty", "LLM context"],
+      "period": "2025 - Present",
+      "href": "https://github.com/NLucy/noetic-search",
+      "bullets": [
+        "Designed a post-retrieval layer that preserves broad recall while selecting stronger representative evidence for downstream LLM calls.",
+        "Adds a multihop-style evidence step before the LLM sees context, selecting connected support instead of isolated nearest neighbors.",
+        "Uses local graph reconciliation to identify coherent evidence regions, reduce repetitive nearest-neighbor results, and expose uncertainty for inspection.",
+        "Improved mean recall from 0.738 to 0.783 across @5/@10 on HotpotQA, 2WikiMultiHopQA, MuSiQue, and clinical evidence benchmarks: a 6.1% relative improvement over hybrid."
+      ]
+    },
+    {
+      "name": "UT IVIG Therapy Study",
+      "type": "Clinical Research Analytics",
+      "description": "A University of Texas Neurology collaboration analyzing long-COVID IVIG therapy response patterns through cytokine profiles, questionnaire timing, and reproducible figure-generation workflows.",
+      "tags": ["Python", "Pandas", "PCA", "Cytokine analysis", "Clinical research"],
+      "bullets": [
+        "Linked patient-reported response timing with multiplex cytokine measurements to compare early and late IVIG treatment responders.",
+        "Built reproducible analysis code for patient-level PCA, cytokine loadings, PDGF-AA visualization, and responder-group heatmaps.",
+        "Prepared publication-oriented PNG/PDF figure outputs and a clean handoff structure for UT Neurology collaborators."
+      ]
+    }
+  ],
+  "certifications": [
+    "SnowPro Core Certification",
+    "AWS Cloud Practitioner (Solutions Architect in progress)",
+    "Google Data Analytics Certificate",
+    "Triplebyte Certified",
+    "CITI Program - Biomedical Research Ethics"
+  ],
+  "education": [
+    {
+      "school": "Hack Reactor",
+      "details": "Advanced Software Engineering Immersive, 2021 - 2022"
+    },
+    {
+      "school": "Fort Lewis College",
+      "details": "B.A. Psychology + Premedical Biochemistry major, Jul 2011 - May 2014"
+    },
+    {
+      "school": "Texas State University",
+      "details": "Biochemistry major, Jan 2017 - Jan 2018"
+    }
+  ],
+  "interests": ["Music production", "Digital art", "Writing", "Health science", "Cognitive systems"]
+}
