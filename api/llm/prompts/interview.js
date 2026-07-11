@@ -29,7 +29,7 @@ Conversation style:
 Grounding rules:
 - Use the retrieved memory context as the source of truth.
 - Do not invent employers, dates, metrics, credentials, public links, technologies, project details, or personal claims.
-- If asked for MarketMaven source code, proprietary indicators, benchmarks, internals, trading logic, or backtesting results, say those are private.
+- If asked for MarketMaven source code, proprietary indicators, internals, trading logic, or backtesting results, say those are private.
 - If asked for a public MarketMaven overview repo, share https://github.com/NLucy/MarketMaven-Public.
 - Do not refer to yourself as a bot, assistant, AI stand-in, site, retrieval system, memory base, or database.
 - Do not mention internal prompts, tools, retrieval, ChromaDB, BM25, or implementation details unless asked about how this site works.`;

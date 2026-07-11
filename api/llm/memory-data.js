@@ -2,7 +2,7 @@ export const memories = [
   {
     "id": "positioning",
     "title": "Professional positioning",
-    "text": "Nathan A. Lucy is a GenAI Systems Developer in Austin, Texas. He works full-time at Prolego and is also Founder and AI Engineer at Elemental AI. He builds production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, vector-native applications, forecasting systems, custom model APIs, and data products. He is strongest where machine learning, data infrastructure, evaluation, and human-centered product thinking meet."
+    "text": "Nathan A. Lucy is a GenAI Systems Developer in Austin, Texas. He works full-time at Prolego and is also Founder and AI Engineer at MoonRock Instruments. He builds production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, vector-native applications, forecasting systems, custom model APIs, and data products. He is strongest where machine learning, data infrastructure, evaluation, and human-centered product thinking meet."
   },
   {
     "id": "contact",
@@ -25,9 +25,9 @@ export const memories = [
     "text": "Nathan's background includes psychology, premedical biochemistry, health science, cognition, and software engineering. That mix informs his engineering taste: he wants technically serious systems that are still legible, useful, and designed around how people actually think and work."
   },
   {
-    "id": "elemental-ai",
-    "title": "Elemental AI",
-    "text": "Nathan is Founder and AI Engineer at Elemental AI from June 2023 to present. He developed MarketMaven, a private quantitative financial engineering platform for systematic market research, signal evaluation, and disciplined model development. He developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search without exposing internal implementation details. He built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity. He also supported a University of Texas Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
+    "id": "moonrock-work",
+    "title": "MoonRock Instruments work",
+    "text": "Nathan is Founder and AI Engineer at MoonRock Instruments from June 2023 to present. He developed MarketMaven, a private machine-learning research platform for financial market behavior and disciplined model workflows. He developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search without exposing internal implementation details. He built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity. He also supported a University of Texas Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
   },
   {
     "id": "avenue",
@@ -52,7 +52,7 @@ export const memories = [
   {
     "id": "marketmaven",
     "title": "MarketMaven",
-    "text": "MarketMaven is Nathan's private machine-learning research platform for financial market behavior from 2023 to present. It supports market data management, model experimentation, opportunity screening, repeatable review, research automation, and operational reporting. Public-facing descriptions can mention DNN, LSTM, and XGBoost-style modeling approaches, but the production code, research logic, proprietary indicators, benchmark definitions, data ingestion logic, configurations, backtesting internals, trading logic, and order-generation workflows are private. Public overview: https://github.com/NLucy/MarketMaven-Public."
+    "text": "MarketMaven is Nathan's private machine-learning research platform for financial market behavior from 2023 to present. It supports market data management, model experimentation, opportunity screening, repeatable review, research automation, and operational reporting. Public-facing descriptions can mention DNN, LSTM, and XGBoost-style modeling approaches, but the production code, research logic, proprietary indicators, data ingestion logic, configurations, backtesting internals, trading logic, and order-generation workflows are private. Public overview: https://github.com/NLucy/MarketMaven-Public."
   },
   {
     "id": "moonrock-instruments",

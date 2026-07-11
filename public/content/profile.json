@@ -72,12 +72,12 @@
       ]
     },
     {
-      "company": "Elemental AI",
+      "company": "MoonRock Instruments",
       "title": "Founder & AI Engineer",
       "location": "Austin, Texas / Remote",
       "period": "Jun 2023 - Present",
       "bullets": [
-        "Developed MarketMaven, a private quantitative financial engineering platform for systematic market research, signal evaluation, and disciplined model development.",
+        "Developed MarketMaven, a private machine-learning research platform for financial market behavior and disciplined model workflows.",
         "Developed Noetic Search, a post-retrieval reconciliation layer that improves evidence selection after broad hybrid search.",
         "Built LLM-supported public sentiment analysis qualified against deep embedding-space context and historical signal similarity.",
         "Supported a UT Neurology long-COVID IVIG therapy study with reproducible cytokine analysis and publication-oriented figure generation."
@@ -151,7 +151,7 @@
       "href": "https://github.com/NLucy/MarketMaven-Public",
       "bullets": [
         "Built private research workflows for market data management, model experimentation, opportunity screening, and repeatable review.",
-        "Worked across DNN, LSTM, and XGBoost-style modeling approaches while keeping production code, research logic, and benchmark definitions private.",
+        "Worked across DNN, LSTM, and XGBoost-style modeling approaches while keeping production code and research logic private.",
         "Separated research, validation, and operational concerns with version discipline, controlled review, and reporting workflows."
       ]
     },
