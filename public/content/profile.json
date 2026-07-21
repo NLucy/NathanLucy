@@ -130,16 +130,15 @@
       ]
     },
     {
-      "name": "AdBrain",
-      "type": "AI/ML API Microservice",
-      "description": "A production-grade AI/ML microservice architecture for automated model training, inference, forecasting, and contextual marketing intelligence.",
-      "tags": ["PyTorch", "Django", "Gunicorn", "NGINX", "AWS", "Seq2Seq"],
-      "period": "2022 - 2025",
+      "name": "Cortica",
+      "type": "Confidential Long-Term State Layer",
+      "description": "A proprietary state layer for LLM applications requiring durable memory, evidence consolidation, directed attention, and inspectable state.",
+      "tags": ["LLM state", "Memory systems", "Evidence links", "Inspectable AI", "Directed attention", "Patent pending"],
+      "period": "2025 - Present",
       "bullets": [
-        "Implemented automated time series forecasting pipelines and cognitive AI agent architecture.",
-        "Built scalable endpoints for training, testing, and managing deep learning and decision-tree models.",
-        "Designed flexible neural networks and custom estimators for long-running hyperparameter tuning.",
-        "Developed Seq2Seq NLP networks and retrieval-enhanced pipelines for contextual marketing insights."
+        "Built a confidential system for maintained state in LLM products, separate from transcript storage.",
+        "Defines durable memory, consolidation, evidence-linked insights, and standing objectives as distinct operational surfaces.",
+        "Supports inspection of memory state, provenance, archives, and evidence links while keeping implementation private."
       ]
     },
     {

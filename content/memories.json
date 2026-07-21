@@ -45,9 +45,9 @@
     "text": "From March 2022 to March 2023, Nathan wrote programming articles for JavaScript in Plain English, an online publication with more than 2 million monthly views."
   },
   {
-    "id": "adbrain",
-    "title": "AdBrain",
-    "text": "AdBrain is Nathan's AI/ML API microservice project from 2022 to 2025. It used PyTorch, Django, Gunicorn, NGINX, and AWS. Nathan implemented automated time series forecasting pipelines and cognitive AI agent architecture, built scalable endpoints for deep learning and decision tree models, designed flexible neural networks and custom estimators for long-running hyperparameter tuning, and developed Seq2Seq NLP networks and retrieval-enhanced pipelines for contextual marketing insights."
+    "id": "cortica",
+    "title": "Cortica",
+    "text": "Cortica is Nathan's confidential, patent-pending long-term state layer for LLM applications. It is proprietary and not public. Public descriptions should stay high level: durable memory, evidence consolidation, directed attention, inspectable state, and evidence-linked insights. It is not a transcript store. Implementation details, internal architecture, storage mechanics, algorithms, prompts, and source code are private."
   },
   {
     "id": "marketmaven",
