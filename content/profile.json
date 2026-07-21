@@ -131,14 +131,14 @@
     },
     {
       "name": "Cortica",
-      "type": "Confidential Long-Term State Layer",
-      "description": "A proprietary state layer for LLM applications requiring durable memory, evidence consolidation, directed attention, and inspectable state.",
-      "tags": ["LLM state", "Memory systems", "Evidence links", "Inspectable AI", "Directed attention"],
+      "type": "Confidential Cognitive State Layer",
+      "description": "A proprietary state layer for LLM applications requiring durable memory, directed attention, evidence consolidation, and inspectable reasoning state.",
+      "tags": ["LLM state", "Evidence links", "Directed attention", "Rumination", "Inspectable AI"],
       "period": "2025 - Present",
       "bullets": [
-        "Built a confidential system for maintained state in LLM products, separate from transcript storage.",
-        "Defines durable memory, consolidation, evidence-linked insights, and standing objectives as distinct operational surfaces.",
-        "Supports inspection of memory state, provenance, archives, and evidence links while keeping implementation private."
+        "Maintains a long-term memory field for LLM products through consolidation, archival, and evidence-linked state updates.",
+        "Defines memory, attention, consolidation, evidence-linked insights, and standing objectives as distinct operational surfaces.",
+        "Supports inspection of state, provenance, archives, evidence links, and derived conclusions while keeping implementation private."
       ]
     },
     {

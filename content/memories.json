@@ -47,7 +47,7 @@
   {
     "id": "cortica",
     "title": "Cortica",
-    "text": "Cortica is Nathan's confidential, patent-pending long-term state layer for LLM applications. It is proprietary and not public. Public descriptions should stay high level: durable memory, evidence consolidation, directed attention, inspectable state, and evidence-linked insights. It is not a transcript store. Implementation details, internal architecture, storage mechanics, algorithms, prompts, and source code are private."
+    "text": "Cortica is Nathan's confidential cognitive state layer for LLM applications. It is proprietary and not public. Public descriptions should stay high level: durable memory, directed attention, evidence consolidation, inspectable reasoning state, rumination, evidence-linked insights, and memory lifecycle maintenance through consolidation, archival, and state updates. It is not a transcript store. Implementation details, internal architecture, storage mechanics, algorithms, prompts, and source code are private."
   },
   {
     "id": "marketmaven",
