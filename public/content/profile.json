@@ -131,9 +131,8 @@
     },
     {
       "name": "Cortica",
-      "type": "Confidential Cognitive State Layer",
+      "type": "LLM State Layer",
       "description": "A proprietary state layer for LLM applications requiring durable memory, directed attention, evidence consolidation, and inspectable reasoning state.",
-      "logo": "/assets/cortica-mark-white-on-black.svg",
       "tags": ["LLM state", "Evidence links", "Directed attention", "Rumination", "Inspectable AI"],
       "period": "2025 - Present",
       "bullets": [
