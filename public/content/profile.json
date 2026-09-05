@@ -26,7 +26,7 @@
   "summary": "I build production-grade AI systems: agent architecture, structured tool use for production AI systems, custom retrieval, evaluation loops, forecasting systems, data pipelines, and model-facing applications people can actually operate. My background in psychology, premedical biochemistry, and cognition keeps the work grounded in how people think, decide, and trust systems.",
   "portrait": "/assets/profile-400-r.jpg",
   "strengths": [
-    "Agent architecture, tool use, and context-aware LLM systems",
+    "Authenticated agent systems, structured tool use, and context-aware LLM systems",
     "Custom retrieval, vector-native applications, and evaluation frameworks",
     "AI/ML APIs for training, inference, forecasting, and autonomous insight",
     "Data pipelines from backend services through Snowflake, Sigma BI, and custom UI",
@@ -40,11 +40,11 @@
     },
     {
       "group": "Data and Cloud",
-      "items": ["AWS", "MySQL", "PostgreSQL", "MongoDB", "BigQuery", "Docker", "Snowflake", "Sigma BI"]
+      "items": ["AWS", "Azure", "Kubernetes", "Okta agent auth", "MySQL", "PostgreSQL", "MongoDB", "BigQuery", "Docker", "Snowflake", "Sigma BI"]
     },
     {
       "group": "Advanced AI Systems",
-      "items": ["Agent architecture", "Structured tool use", "Function calling", "Model routing", "Context engineering", "Evaluation harnesses", "Safety constraints", "Human-in-the-loop review"]
+      "items": ["Authenticated agent systems", "Structured tool use", "Function calling", "Model routing", "Context engineering", "Evaluation harnesses", "Safety constraints", "Human-in-the-loop review"]
     },
     {
       "group": "Retrieval and Vector Systems",
@@ -131,14 +131,14 @@
     },
     {
       "name": "Cortica",
-      "type": "LLM State Layer",
-      "description": "A proprietary state layer for LLM applications requiring durable memory, directed attention, evidence consolidation, and inspectable reasoning state.",
-      "tags": ["LLM state", "Evidence links", "Directed attention", "Rumination", "Inspectable AI"],
+      "type": "Longitudinal LLM State Layer",
+      "description": "A proprietary state layer for longitudinal LLM systems where retrieval alone is not enough: durable memory is maintained, consolidated, and reconnected to evidence over time.",
+      "tags": ["LLM state", "Longitudinal memory", "Evidence links", "Provenance", "Inspectable AI"],
       "period": "2025 - Present",
       "bullets": [
-        "Maintains a long-term memory field for LLM products through consolidation, archival, and evidence-linked state updates.",
-        "Defines memory, attention, consolidation, evidence-linked insights, and standing objectives as distinct operational surfaces.",
-        "Supports inspection of state, provenance, archives, evidence links, and derived conclusions while keeping implementation private."
+        "Maintains evolving memory state for LLM products through consolidation, archival, and evidence-linked updates.",
+        "Preserves provenance so prior conclusions remain inspectable and reconnect to the evidence that produced them.",
+        "Supports longitudinal recall where later questions depend on accumulated structure, not only nearest-neighbor retrieval."
       ]
     },
     {

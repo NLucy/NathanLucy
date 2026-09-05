@@ -12,7 +12,7 @@ export const memories = [
   {
     "id": "technical-skills",
     "title": "Technical skills",
-    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, LSTM, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, agent architecture, structured tool use, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
+    "text": "Nathan works with Python, JavaScript ES5 and ES6, Ruby, React, React Native, Redux, Vue.js, Django, AWS, Azure, Kubernetes, Okta agent auth, MySQL, PostgreSQL, MongoDB, BigQuery, Docker, Snowflake, Sigma BI, PyTorch, Sklearn, SARIMA, LSTM, Seq2Seq, ChromaDB, pgvector, embedding search, hybrid search, BM25, custom retrieval, context engineering, authenticated agent systems, structured tool use, function calling, model routing, evaluation harnesses, safety constraints, human-in-the-loop review, custom tuning, NGINX, Gunicorn, CI/CD, Jest, Mocha, K6, and Loader.io."
   },
   {
     "id": "prolego",
@@ -47,7 +47,7 @@ export const memories = [
   {
     "id": "cortica",
     "title": "Cortica",
-    "text": "Cortica is Nathan's confidential cognitive state layer for LLM applications. It is proprietary and not public. Public descriptions should stay high level: durable memory, directed attention, evidence consolidation, inspectable reasoning state, rumination, evidence-linked insights, and memory lifecycle maintenance through consolidation, archival, and state updates. It is not a transcript store. Implementation details, internal architecture, storage mechanics, algorithms, prompts, and source code are private."
+    "text": "Cortica is Nathan's proprietary longitudinal LLM state layer. Public descriptions should stay high level: retrieval alone is not memory; durable memory is maintained, consolidated, archived, and reconnected to evidence over time; provenance keeps prior conclusions inspectable; and later questions can depend on accumulated structure rather than only nearest-neighbor retrieval. It is not a transcript store. Implementation details, internal architecture, storage mechanics, algorithms, prompts, and source code are private."
   },
   {
     "id": "marketmaven",
